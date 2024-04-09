@@ -17,21 +17,22 @@ if (!bankBranchInstance) {
 
 //    - Assign the new instance to bankBranchInstance.
     bankBranchInstance = this;
-
+}
 
 //    - Return the `bankBranchInstance` whether it's newly created or existing.
 return bankBranchInstance;
+}
 
 // 4. Add methods to the `BankBranch` class for managing branch-related information. For example, you can add a method like `getBranchInfo` to retrieve branch details.
 getBranchInfo() {
     return this.branchInfo;
-}
+  }
 }
 
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
 let branchA = new BankBranch({ name: 'Branch A', address: '123 Main St' });
-        let branchB = new BankBranch({ name: 'Branch B', address: '456 Maple St' });
+let branchB = new BankBranch({ name: 'Branch B', address: '456 Maple St' });
 
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 console.log(branchA.getBranchInfo());
@@ -39,6 +40,7 @@ console.log(branchB.getBranchInfo());
 
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 console.log(branchA === branchB);
+
 // This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
 
 // NOTES:
