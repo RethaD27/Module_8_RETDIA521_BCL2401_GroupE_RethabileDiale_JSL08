@@ -30,6 +30,9 @@ getBranchInfo() {
 
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
+let branchA = new BankBranch({ name: 'Branch A', address: '123 Main St' });
+        let branchB = new BankBranch({ name: 'Branch B', address: '456 Maple St' });
+
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 
